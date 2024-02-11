@@ -1,0 +1,57 @@
+
+{{#each user}}
+
+	<div>{{name}} {{age}} </div>
+
+{{/each}}
+
+{{#with show}}
+<div>
+	{{#if show1}}
+		<p>show1</p>
+	{{/if}}
+    {{#if show2}}
+		<p>show2</p>
+	{{/if}}
+    {{#if show3}}
+		<p>show3</p>
+	{{/if}}
+</div>
+{{/with}}
+
+<div>
+	{{test}}
+   <p>Data : {{getDate}}</p> 
+   <p>
+	{{square 3}}
+</p>
+</div>
+
+{{!-- {{#each users}}
+	<p>
+		{{upper}}
+	</p>
+{{/each}} --}}
+
+<p>
+	{{sum (square 3) 4}}
+</p>
+
+
+
+<p>{{count purchase.cost purchase.amount}}</p>
+
+{{#each users}}
+
+<div>{{format }}</div>
+
+
+{{/each}}
+
+<p>
+	{{{link '/index' 'главная'}}}
+</p>
+
+{{#if sum}}
+ {{sum}}
+{{/if}}
